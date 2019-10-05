@@ -1,6 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe GramsController, type: :controller do
+
+  describe "grams#edit action" do
+    it "should successfully show the edit form it the gram is found" do
+
+    end
+
+    it "should return a 404 error message if hte gram is not found" do
+
+    end
+  end
+  
   describe "grams#index action" do
     it "should successfully show the page" do
       gram = FactoryBot.create(:gram)
