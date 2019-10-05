@@ -11,6 +11,7 @@ class GramsController < ApplicationController
       redirect_to root_path
      else
       return render :edit, status: :unprocessable_entity
+     end
     end
 
     def new

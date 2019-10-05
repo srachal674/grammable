@@ -21,7 +21,7 @@ end
   describe "grams#edit action" do
     it "should successfully show the edit form it the gram is found" do
       gram = FactoryBot.create(:gram)
-      get :edit, params: { id: gram.id }
+      get :edit, params: {id: gram.id}
       expect(response).to have_http_status(:success)
     end
 
