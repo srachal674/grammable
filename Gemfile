@@ -69,3 +69,5 @@ gem 'jquery-rails'
 gem 'simple_form'
 
 gem 'devise'
+
+gem 'factory_bot_rails'
