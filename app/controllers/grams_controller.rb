@@ -7,13 +7,13 @@ class GramsController < ApplicationController
 
   def new
     @gram = Gram.new
-    <%= f.input :photos %>
-    <% end %>
+      <%= f.input :photos %>
+      <% end %>
   end
 
   def create
     @gram = current_user.grams.create(gram_params)
-
+  end
     if @gram.valid?
       redirect_to root_path
     else
@@ -57,12 +57,11 @@ class GramsController < ApplicationController
   private
 
   def gram_params
-    params.require(:gram).permit(:message)
+    params.require(:gram).permit(:message, :photos)
   end
 
 
   def render_not_found(status=:not_found)
     render plain: "#{status.to_s.titleize} :(", status: status
   end
-
 end
