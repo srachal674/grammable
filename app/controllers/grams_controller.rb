@@ -1,11 +1,14 @@
 class GramsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :photos]
 
   def index
+    @grams = Gram.all
   end
 
   def new
     @gram = Gram.new
+    <%= f.input :photos %>
+    <% end %>
   end
 
   def create
