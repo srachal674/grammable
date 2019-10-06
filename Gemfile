@@ -72,4 +72,10 @@ gem 'devise'
 
 gem 'factory_bot_rails'
 
+##Image manager
 gem 'carrierwave'
+gem 'fog-aws'
+
+
+##Personal data protector
+gem 'figaro'

@@ -7,13 +7,10 @@ class GramsController < ApplicationController
 
   def new
     @gram = Gram.new
-      <%= f.input :photos %>
-      <% end %>
   end
 
   def create
     @gram = current_user.grams.create(gram_params)
-  end
     if @gram.valid?
       redirect_to root_path
     else
