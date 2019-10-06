@@ -16,7 +16,6 @@ require 'rails_helper'
     gram.reload
     expect(gram.message).to eq "Initial Value"
   end
-end
 
   describe "grams#edit action" do
     it "should successfully show the edit form it the gram is found" do
@@ -97,3 +96,4 @@ end
       expect(gram_count).to eq Gram.count
     end
   end
+end 
