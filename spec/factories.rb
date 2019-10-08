@@ -12,7 +12,7 @@ FactoryBot.define do
     end
 
     factory :gram do
-      message { "hello" }
+      message {"hello"}
       photos { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'picture.png').to_s, 'image/png') }
 
       association :user

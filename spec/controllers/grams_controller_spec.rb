@@ -148,7 +148,7 @@ RSpec.describe GramsController, type: :controller do
       user = FactoryBot.create(:user)
       sign_in user
 
-      post :create, params: {
+      post :create, gram: {
         gram: {
           message: 'Hello!',
           photos: fixture_file_upload("/picture.png", 'image/png')
