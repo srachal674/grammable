@@ -18,7 +18,8 @@ RSpec.describe CommentsController, type: :controller do
         it "should require a user to be logged in to comment on a gram" do
             gram = FactoryBot.create(:gram)
             post :create, params: { gram_id: gram.id, comment: { message: 'awesome gram' } }
-            expect(response).to redirect_to root_path
+            expect(response).to redirect_to new_user_session_path
+        
         end
 
         it "should return http status code of if not found if gram isn't found" do
