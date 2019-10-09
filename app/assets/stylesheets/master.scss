@@ -1,0 +1,44 @@
+body {
+    background: 
+    font-family: 'Josefin Slab', serif;
+}
+
+.top-nav {
+    background-color: rgba($color: #461D7C, $alpha: 1.0);
+    color: rgba(253, 208, 35, 1.0);
+    border-bottom-color: rgb(249, 233, 171);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    height: 85px;
+    padding-top: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.brand {
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    font-family: 'Clicker Script', cursive;
+  }
+
+/* unvisited link */
+a:link {
+    color: rgba(255, 255, 255, 1.0);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(29, 134, 191);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(250, 159, 205);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(220, 165, 244);
+  }
+
+  
