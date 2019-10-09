@@ -79,3 +79,7 @@ gem 'fog-aws'
 
 ##Personal data protector
 gem 'figaro'
+
+group :test do
+  gem 'shoulda-matchers'
+end
