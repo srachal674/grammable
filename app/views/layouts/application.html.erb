@@ -17,9 +17,10 @@
         <div class="brand">
           Grammable
         </div>
-        <div class="add float-left">
+        <div class="add float-right">
           <% if current_user %>
             You're signed in as <%= current_user.email %>.
+            <%= link_to "New Post", new_gram_path %>
             <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
           <% else %>
             <%= link_to "Sign In", new_user_session_path %>
@@ -37,6 +38,14 @@
       </div>
       <br class="clear-fix" />
     </div>  
+
+    <% if notice.present? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% end %>
+    <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

@@ -34,33 +34,43 @@ body {
 
 /* unvisited link */
 a:link {
-    color: rgba(255, 255, 255, 1.0);
+    color: rgb(43, 43, 43);
+    font-size: 24px;
   }
   
   /* visited link */
   a:visited {
-    color: rgb(98, 197, 250);
+    color: white;
+    font-size: 24px;
   }
   
   /* mouse over link */
   a:hover {
-    color: rgb(250, 159, 205);
+    color: rgb(22, 6, 207);
+    font-size: 24px;
   }
   
   /* selected link */
   a:active {
-    color: rgb(220, 165, 244);
+    color: rgb(24, 5, 91);
+    font-size: 24px;
   }
 
   h1 {
-    color: white;  
+    color: rgb(101, 99, 99); 
     text-shadow: 2px 2px black;
     font-style: bold;
     font-size: 50px;
   }
 
+  h2 {
+    color: rgb(199, 196, 196); 
+    text-shadow: 2px 2px black;
+    font-style: bold;
+    font-size: 40px;
+  }
 .card {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(121, 121, 121, 0.75);
   border-radius: .25rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #bbbbbb;
@@ -68,8 +78,53 @@ a:link {
   padding: 0;
 }
 
+.card p, .card .message {
+  font-size: 18px;
+  margin: 20px;
+}
+
+.card.form {
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+}
+
 .handle {
-  color: #461D7C;
+  margin: 10px;
+  color: #000000;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
+}
+
+label {
+  color: #000000;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+input {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.my-btn {
+  background-color: #461D7C;
+  width: 100%;
+  border: solid;
+  border-width: medium;
+  border-color: #FDD023;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+.input.boolean {
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+.input.boolean label {
+  margin-top: 5px;
+  line-height: 44px;
 }
