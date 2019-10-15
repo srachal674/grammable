@@ -67,32 +67,32 @@ a.top-nav:active {
 }
  
 /* unvisited link */
-a:link {
+b.top-nav:link {
     color: rgba(253, 208, 35, 1.0);
     font-size: 24px;
   }
   
   /* visited link */
-  a:visited {
+  b.top-nav:visited {
     color: white;
     font-size: 24px;
   }
   
   /* mouse over link */
-  a:hover {
-    color: rgb(22, 6, 207);
+  b.top-nav:hover {
+    color: rgb(99, 91, 186);
     font-size: 24px;
   }
   
   /* selected link */
-  a brand:active {
+  b.top-nav:active {
     color: rgb(24, 5, 91);
     font-size: 24px;
   }
 
   h1 {
     color: white; 
-    text-shadow: 2px 4px black;
+    text-shadow: 4px 4px black;
     font-style: bold;
     font-size: 50px;
     padding: 5px;
