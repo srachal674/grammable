@@ -7,7 +7,7 @@
     border-bottom-color: rgb(249, 233, 171);
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    //height: 105px;
+    height: 105px;
     padding-top: 15px;
     font-family: 'Red Hat Display', sans-serif;
     //padding-left: 14px;
@@ -62,7 +62,7 @@ a.top-nav:active {
  
 /* unvisited link */
 a:link {
-    color: rgb(238, 231, 5);
+    color: rgba(253, 208, 35, 1.0);
     font-size: 24px;
   }
   
@@ -89,7 +89,7 @@ a:link {
     text-shadow: 2px 4px black;
     font-style: bold;
     font-size: 50px;
-    padding: 10px;
+    padding: 5px;
   }
 
   h2 {
@@ -177,7 +177,7 @@ input {
   font-weight: bold;
   font-size: 18px;
   margin-right:  20px;
-  margin-left: auto;
+  margin-left:20px;
   float: left;
 }
 
