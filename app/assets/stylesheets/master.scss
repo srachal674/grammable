@@ -4,7 +4,7 @@ body {
     background: image-url("dark-brick-background.jpg") ;
     background-size: auto;
     font-family: 'Josefin Slab', serif;
-    color: rgb(216, 216, 216)
+    color: rgb(12, 3, 75)
 }
 
 .top-nav {
@@ -13,10 +13,10 @@ body {
     border-bottom-color: rgb(249, 233, 171);
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    height: 105px;
+    //height: 105px;
     padding-top: 15px;
     font-family: 'Red Hat Display', sans-serif;
-    padding-left: 30px;
+    padding-left: 20px;
     text-align: center;
 }
 
@@ -53,16 +53,41 @@ a:link {
   }
   
   /* selected link */
-  a:active {
+  a brand:active {
     color: rgb(24, 5, 91);
     font-size: 24px;
   }
 
+  /* unvisited link */
+a.top-nav:link {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+/* visited link */
+a.top-nav:visited {
+  color: rgb(254, 224, 224);
+  font-size: 24px;
+}
+
+/* mouse over link */
+a.top-nav:hover {
+  color: rgb(249, 235, 159);
+  font-size: 24px;
+}
+
+/* selected link */
+a.top-nav:active {
+  color: rgb(172, 152, 245);
+  font-size: 24px;
+}
+
   h1 {
-    color: rgb(101, 99, 99); 
-    text-shadow: 2px 2px black;
+    color: white; 
+    text-shadow: 2px 4px black;
     font-style: bold;
     font-size: 50px;
+    padding: 10px;
   }
 
   h2 {
@@ -70,6 +95,13 @@ a:link {
     text-shadow: 2px 2px black;
     font-style: bold;
     font-size: 40px;
+  }
+
+  h3 {
+    color: rgb(155, 155, 155); 
+    text-shadow: 2px 2px black;
+    font-style: bold;
+    font-size: 50px;
   }
 .card {
   background-color: rgba(121, 121, 121, 0.75);
@@ -81,7 +113,7 @@ a:link {
 }
 
 .card p, .card .message {
-  font-size: 18px;
+  font-size: 25px;
   margin: 20px;
 }
 
@@ -129,4 +161,16 @@ input {
 .input.boolean label {
   margin-top: 5px;
   line-height: 44px;
+}
+
+.gram-actions a {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right:  20px;
+  margin-left: auto;
+  flex: 50%;
+}
+
+.card.form {
+  padding: 20px;
 }
