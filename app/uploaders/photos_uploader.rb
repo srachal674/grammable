@@ -4,8 +4,8 @@ class PhotosUploader < CarrierWave::Uploader::Base
   # include CarrierWave::MiniMagick
 
   # Choose what kind of storage to use for this uploader:
-  # bundle exec figaro installstorage :file
-  storage :fog
+  #bundle exec figaro installstorage :file
+  #storage :fog
   
 
 

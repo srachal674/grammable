@@ -73,7 +73,7 @@ gem 'devise'
 gem 'factory_bot_rails'
 
 ##Image manager
-gem 'carrierwave'
+gem 'carrierwave', '~> 1.0'
 gem 'fog-aws'
 
 
