@@ -34,61 +34,58 @@
     //padding-left: 38px;
   }
 
-    /* unvisited link */
-a.top-nav:link {
-  color: rgb(255, 255, 255);
-  font-size: 24px;
+/* unvisited link */
+.top-nav a:link {
+  color: rgb(199, 198, 198);
 }
 
 /* visited link */
-a.top-nav:visited {
-  color: rgb(254, 224, 224);
-  font-size: 24px;
-}
+.top-nav a:visited {
+  color: rgb(8, 191, 8);
+} 
 
 /* mouse over link */
-a.top-nav:hover {
-  color: rgb(249, 235, 159);
-  font-size: 24px;
+.top-nav a:hover {
+  color: rgb(108, 95, 249);
 }
 
 /* selected link */
-a.top-nav:active {
-  color: rgb(172, 152, 245);
-  font-size: 24px;
+.top-nav a:active {
+  color: rgb(35, 5, 230);
 }
 
-  //Body formatting
-  body {
-    background: image-url("dark-brick-background.jpg") ;
-    background-size: auto;
-    font-family: 'Josefin Slab', serif;
-    color: rgb(12, 3, 75)
+//Body formatting
+body {
+  background: image-url("dark-brick-background.jpg") ;
+  background-size: auto;
+  font-family: 'Josefin Slab', serif;
+  color: rgb(12, 3, 75)
 }
  
 /* unvisited link */
-b.top-nav:link {
-    color: rgba(253, 208, 35, 1.0);
-    font-size: 24px;
-  }
-  
-  /* visited link */
-  b.top-nav:visited {
-    color: white;
-    font-size: 24px;
-  }
-  
-  /* mouse over link */
-  b.top-nav:hover {
-    color: rgb(99, 91, 186);
-    font-size: 24px;
-  }
-  
-  /* selected link */
-  b.top-nav:active {
-    color: rgb(24, 5, 91);
-    font-size: 24px;
-  }
+a:link {
+  color: rgb(11, 6, 116);
+  font-size: 30px;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(70, 3, 37);
+  font-size: 30px;
+}
+
+/* selected link */
+a:active {
+  color: rgb(9, 125, 9);
+  font-size: 30px;
+}
+
 
   h1 {
     color: white; 
@@ -120,7 +117,7 @@ b.top-nav:link {
   }
 
 .card {
-  background-color: rgba(121, 121, 121, 0.75);
+  background-color: rgba(121, 121, 121, 0.65);
   border-radius: .25rem;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #bbbbbb;
