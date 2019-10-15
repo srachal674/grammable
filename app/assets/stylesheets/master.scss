@@ -1,12 +1,6 @@
 @import "bootstrap";
 
-body {
-    background: image-url("dark-brick-background.jpg") ;
-    background-size: auto;
-    font-family: 'Josefin Slab', serif;
-    color: rgb(12, 3, 75)
-}
-
+//Navigation bar formatting
 .top-nav {
     background-color: rgba($color: #461D7C, $alpha: 1.0);
     color: rgba(253, 208, 35, 1.0);
@@ -16,14 +10,14 @@ body {
     //height: 105px;
     padding-top: 15px;
     font-family: 'Red Hat Display', sans-serif;
-    padding-left: 20px;
+    //padding-left: 14px;
     text-align: center;
 }
 
 .top-nav .add a {
     font-weight: bold;
     font-size: 16px;
-    padding-left: 12px;
+    text-align: center;
 }
 .brand {
     color: white;
@@ -34,31 +28,7 @@ body {
     padding-left: 38px;
   }
 
-/* unvisited link */
-a:link {
-    color: rgb(43, 43, 43);
-    font-size: 24px;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: white;
-    font-size: 24px;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: rgb(22, 6, 207);
-    font-size: 24px;
-  }
-  
-  /* selected link */
-  a brand:active {
-    color: rgb(24, 5, 91);
-    font-size: 24px;
-  }
-
-  /* unvisited link */
+    /* unvisited link */
 a.top-nav:link {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -82,6 +52,38 @@ a.top-nav:active {
   font-size: 24px;
 }
 
+  //Body formatting
+  body {
+    background: image-url("dark-brick-background.jpg") ;
+    background-size: auto;
+    font-family: 'Josefin Slab', serif;
+    color: rgb(12, 3, 75)
+}
+ 
+/* unvisited link */
+a:link {
+    color: rgb(238, 231, 5);
+    font-size: 24px;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(22, 6, 207);
+    font-size: 24px;
+  }
+  
+  /* selected link */
+  a brand:active {
+    color: rgb(24, 5, 91);
+    font-size: 24px;
+  }
+
   h1 {
     color: white; 
     text-shadow: 2px 4px black;
@@ -98,11 +100,19 @@ a.top-nav:active {
   }
 
   h3 {
-    color: rgb(155, 155, 155); 
-    text-shadow: 2px 2px black;
+    color: #FDD023; 
+    text-shadow: 2px 2px #461D7C;
     font-style: bold;
-    font-size: 50px;
+    font-size: 30px;
   }
+
+  h4{
+    color:  #461D7C;
+    //text-shadow: 1px 2px #FDD023;
+    font-style: bold;
+    font-size: 26px;
+  }
+
 .card {
   background-color: rgba(121, 121, 121, 0.75);
   border-radius: .25rem;
@@ -128,7 +138,7 @@ a.top-nav:active {
   margin: 10px;
   color: #000000;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 label {
@@ -146,7 +156,7 @@ input {
   background-color: #461D7C;
   width: 100%;
   border: solid;
-  border-width: medium;
+  border-width: thin;
   border-color: #FDD023;
   font-size: 24px;
   color: white;
@@ -165,12 +175,26 @@ input {
 
 .gram-actions a {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   margin-right:  20px;
   margin-left: auto;
-  flex: 50%;
 }
 
 .card.form {
   padding: 20px;
+}
+
+.comments {
+  padding: 20px;
+}
+
+.comment_handle {
+  color: #125688;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comment{
+  font-size: 16px;
+  margin-top: 5px;
 }
