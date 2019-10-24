@@ -5,7 +5,7 @@ class PhotosUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   #bundle exec figaro installstorage :file
-  #storage :fog
+  storage :fog
   
 
 
